@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css"> <!-- Collega il file CSS -->
+</head>
+<body>
+    <div class="calcolatrice">
+        <!-- Display della calcolatrice -->
+        <input type="text" id="display" disabled>
+
+        <!-- Pulsanti della calcolatrice -->
+        <div class="tasti">
+            <button onclick="aggiungiNumero('7')">7</button>
+            <button onclick="aggiungiNumero('8')">8</button>
+            <button onclick="aggiungiNumero('9')">9</button>
+            <button onclick="aggiungiOperatore('/')">/</button>
+
+            <button onclick="aggiungiNumero('4')">4</button>
+            <button onclick="aggiungiNumero('5')">5</button>
+            <button onclick="aggiungiNumero('6')">6</button>
+            <button onclick="aggiungiOperatore('*')">x</button>
+
+            <button onclick="aggiungiNumero('1')">1</button>
+            <button onclick="aggiungiNumero('2')">2</button>
+            <button onclick="aggiungiNumero('3')">3</button>
+            <button onclick="aggiungiOperatore('-')">-</button>
+
+            <button onclick="aggiungiNumero('0')">0</button>
+            <button onclick="aggiungiNumero('.')">.</button>
+            <button onclick="calcola()">=</button>
+            <button onclick="aggiungiOperatore('+')">+</button>
+
+            <button onclick="cancella()" class="doppio">C</button>
+            <button onclick="cancellaTutto()" class="doppio">AC</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Collega il file JavaScript -->
+</body>
+</html>
